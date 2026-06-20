@@ -88,3 +88,126 @@ svg {
 .nav1 {
   margin: 0 0 50px 0;
 }
+
+/* header */
+
+.header-and-main-container {
+  background-color: #e2e8f0;
+}
+
+.header {
+  height: 180px;
+  background-color: #ffffff;
+  display: grid;
+  column-gap: 20px;
+  grid-auto-flow: column;
+  grid-template-rows: 35% 65%;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  /* grid-template-columns: 2fr 1fr; */
+  align-content: space-around;
+  padding: 0 20px;
+}
+
+input {
+  background-color: var(--main-and-searchbar-bg-clr);
+  height: 2rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+}
+
+input:focus {
+  outline: #000000 2px solid;
+}
+
+.search {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 3rem 1fr;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile-bell {
+  grid-column-start: -1;
+  grid-column-end: -2;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+  padding-right: 50px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.profile-bell img {
+  background-color: #facc15;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.profile-bell svg {
+  margin: 0;
+}
+
+.greet {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.greet img {
+  width: 80px;
+  height: 80px;
+  margin-left: 15px;
+  background-color: #facc15;
+  border-radius: 50%;
+}
+
+.greet-message {
+  display: grid;
+}
+
+.greet-hi {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.greet-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: var(--sidebar-and-btn-bg-clr);
+  color: var(--sidebar-text-and-btn-font-clr);
+  width: 110px;
+  padding: 12px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
