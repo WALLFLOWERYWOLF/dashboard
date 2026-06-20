@@ -279,3 +279,114 @@ h3 {
 .icons svg {
   margin: 0;
 }
+
+/* announcements and trending section */
+
+.announcements-trending-section {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  overflow: scroll;
+  scrollbar-width: none;
+  gap: 20px;
+}
+
+.announcements-section,
+.trending-section {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto 1fr;
+  min-height: 300px;
+}
+
+.announcements-container,
+.trending-container {
+  background-color: white;
+  display: grid;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+  gap: 10px;
+  height: 100%;
+}
+
+.announcements-container {
+  /* grid-template-rows: repeat(3, calc(100% / 3)); */
+  /* grid-auto-rows: calc(100% / 3); */
+  grid-auto-rows: minmax(min-content, max-content);
+}
+
+.announcement {
+  padding: 0 10px 10px; /* we can remove the bottom(last) padding if we remove the grid-auto-rows: minmax(min-content, max-content); above in the announcement container */
+  border-bottom: 1px solid #d2d2d2;
+  display: grid;
+  align-items: center;
+  overflow: scroll;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  line-height: 1.3;
+}
+
+.announcement-heading {
+  font-weight: bold;
+}
+
+.announcement-text {
+  font-size: 0.8rem;
+  color: #6b6b6b;
+}
+
+.trending-container {
+  display: grid;
+  /* grid-template-rows: repeat(4, calc(100% / 4));
+  grid-auto-rows: calc(100% / 4); */
+  grid-auto-rows: minmax(min-content, max-content);
+  padding: 30px;
+}
+
+.trending {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  line-height: 1.3;
+}
+
+.trending img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-profile {
+  display: grid;
+  gap: 4px;
+}
+
+.user-handle {
+  font-size: 0.9rem;
+}
+
+.user-project {
+  font-size: 0.9rem;
+  color: #6b6b6b;
+}
+
+.tegan {
+  background-color: skyblue;
+}
+
+.morgan {
+  background-color: #facc15;
+}
+
+.kendall {
+  background-color: #fda4af;
+}
+
+.alex {
+  background-color: #a3a3a3;
+}
