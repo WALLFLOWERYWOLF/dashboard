@@ -1,0 +1,90 @@
+:root {
+  --sidebar-and-btn-bg-clr: #1992d4;
+  --sidebar-text-and-btn-font-clr: #ffffff;
+  --main-and-searchbar-bg-clr: #e2e8f0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family:
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+}
+
+/* sidebar */
+
+.sidebar {
+  background-color: #1992d4;
+  color: white;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  padding: 0 60px 0 20px;
+}
+
+.sidebar-dashboard > a {
+  font-size: 2rem;
+  font-weight: 500;
+  display: grid;
+  justify-content: start;
+}
+
+a {
+  color: inherit;
+}
+
+.sidebar a:hover {
+  color: darkblue;
+}
+
+li {
+  display: flex;
+  align-items: center; /* this needs to be removed after wrapping the links in a tags*/
+  gap: 5px;
+}
+
+.sidebar a {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-dashboard svg {
+  width: 3.5rem;
+}
+
+svg {
+  width: 1.5rem;
+  fill: currentColor;
+  margin: 0;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.sidebar-dashboard {
+  margin: 10px 0 25px 0;
+}
+
+.nav1 {
+  margin: 0 0 50px 0;
+}
